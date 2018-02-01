@@ -36,10 +36,10 @@ title: Le Wagon 2-hour landing workshop
           <li>
             To save time, just right-click on the following images and save them in your <code>images</code> folder
             <ul class="list-inline features">
-              <li><img src="images/open.png" alt=""></li>
-              <li><img src="images/meeting.png" alt=""></li>
-              <li><img src="images/offices.png" alt=""></li>
-              <li><img src="images/events.png" alt=""></li>
+              <li><img src="images/hustle.png" alt=""></li>
+              <li><img src="images/connect.png" alt=""></li>
+              <li><img src="images/relax.png" alt=""></li>
+              <li><img src="images/move.png" alt=""></li>
             </ul>
           </li>
           <li>Then start with this HTML code in <code>playground.html</code></li>
@@ -47,30 +47,32 @@ title: Le Wagon 2-hour landing workshop
 <% code("html") do %>
 <html>
   <head>
-    <meta charset="utf-8">
-    <title>WePlus playground landing</title>
+    <title>Landing Page</title>
   </head>
   <body>
-    <h1>WePlus is so much more than space</h1>
-    <p>This is also a place to learn to code..</p>
 
-    <h2>Open seats</h2>
-    <p>A very, <strong>very</strong> open space</p>
-    <img src="images/open.png" alt="picture description">
+    <h1>Walnut</h1>
+    <p>Embrace the hustle</p>
+    <a href="#">Enroll</a>
 
-    <h2>Meetings</h2>
-    <p>A meeting place <strong>for your business</strong></p>
-    <img src="images/meeting.png" alt="picture description">
+    <img src="images/hustle.png" alt="Hustle">
+    <h2>Hustle</h2>
+    <p>Hustle like your life depended on it</p>
 
-    <h2>Offices</h2>
-    <p>A workspace <strong>to rent</strong> for your team</p>
-    <img src="images/heart.svg" alt="picture description">
+    <img src="images/relax.png" alt="Relax">
+    <h2>Relax</h2>
+    <p>Open and private spaces for all your needs</p>
 
-    <h2>Events</h2>
-    <p>A cool space <strong>to run your events</strong></p>
-    <img src="images/offices.png" alt="picture description">
+    <img src="images/connect.png" alt="Connect">
+    <h2>Connect</h2>
+    <p>Meet other talented individuals like yourself</p>
 
-    <p>This is a playground landing ©Le Wagon x WePlus</p>
+    <img src="images/move.png" alt="Move">
+    <h2>Move</h2>
+    <p>Do work, stay fit and keep your life super balanced</p>
+
+    <p>Find us on Social Media</p>
+
   </body>
 </html>
 <% end %>
@@ -132,36 +134,37 @@ a:hover {
 
 <% code("html") do %>
 <div>
-  <h1>My playground app</h1>
-  <p>This is the important line everyone reads..</p>
+  <h1>Walnut</h1>
+  <p>Embrace the hustle</p>
+  <a href="#">Join us</a>
 </div>
 
 <div>
-  <h2>Fast</h2>
-  <p>A fast app, <strong>very fast</strong> app</p>
-  <img src="images/briefcase.svg" alt="picture description">
+  <h2>Hustle</h2>
+  <p>Hustle like your life depended on it</p>
+  <img src="images/hustle.png" alt="Hustle">
 </div>
 
 <div>
-  <h2>Simple</h2>
-  <p>A simple app, <strong>very simple</strong> app</p>
-  <img src="images/diamond.svg" alt="picture description">
+  <h2>Relax</h2>
+  <p>Open and private spaces for all your needs</p>
+  <img src="images/relax.png" alt="Relax">
 </div>
 
 <div>
-  <h2>Awesome</h2>
-  <p>An awesome app, <strong>very awesome</strong> app</p>
-  <img src="images/heart.svg" alt="picture description">
+  <h2>Connect</h2>
+  <p>Meet other talented individuals like yourself</p>
+  <img src="images/connect.png" alt="Connect">
 </div>
 
 <div>
-  <h2>Beautiful</h2>
-  <p>A beautiful app, <strong>very beautiful</strong> app</p>
-  <img src="images/laptop.svg" alt="picture description">
+  <h2>Move</h2>
+  <p>Do work, stay fit and keep your life super balanced</p>
+  <img src="images/move.png" alt="Move">
 </div>
 
 <div>
-  <p>This is a playground landing ©Le Wagon</p>
+  <p>Find us on Social Media</p>
 </div>
 <% end %>
 
@@ -174,24 +177,116 @@ a:hover {
           <li>Then add this nice CSS code</li>
         </ul>
 <% code("css") do %>
+/****************/
+/* navbar */
+/****************/
+
+.navbar {
+  background:white;
+  padding:5px;
+  text-align: center;
+}
+
+/****************/
+/* header */
+/****************/
+
 #header{
   text-align: center;
-  background-image: url("https://tgenaitay.github.io/landing/images/background.jpg");
+  background-image: linear-gradient(-225deg, rgba(0,101,168,0.6) 0%, rgba(0,36,61,0.6) 50%), url("http://acceler8.ph/images/coworking.jpg?format=2500w");
   background-size: cover;
   padding: 150px;
   color: white;
-  text-shadow: 1px 1px 5px black;
+}
+
+#header p {
+  font-size: 25px;
+  margin:40px;
+}
+
+#header a.btn {
+  padding:15px;
+  text-decoration: none;
+}
+
+/****************/
+/* content */
+/****************/
+
+.container {
+  padding:20px 0px;
+  background-color: #F3F3F3;
+  display:flex;
+  justify-content: space-around;
+  text-align: center;
 }
 
 .card{
   padding: 50px;
   font-weight: lighter;
+  background-color: white;
+  text-align:center;
+  width:200px;
 }
 
+.card img {
+  width:100px;
+}
+
+/****************/
+/* footer */
+/****************/
+
 #footer{
-  padding: 30px;
-  background: rgb(30, 30, 30);
+  padding: 50px;
+  background: #1E1E1E;
   color: lightgrey;
+  text-align: center;
+  line-height: 2;
+}
+#footer a {
+  color: lightgrey;
+  font-size: 20px;
+}
+#footer a:hover {
+  color: white;
+}
+
+#footer ul {
+  padding-left:0;
+  list-style: none;
+}
+
+#footer li {
+  display: inline-block;
+  padding:0px 10px;
+}
+
+/****************/
+/* forms */
+/****************/
+
+.input {
+  font-size: 18px;
+  height:50px;
+  padding:0px 15px;
+  background:white;
+  border:1px solid lightgray;
+  width:200px;
+  border-radius:3px;
+}
+
+.btn {
+  background:#F5941F;
+  color:white;
+  font-weight: bolder;
+  width:150px;
+  border:1px solid black;
+}
+
+.btn:hover {
+  background: #F78000;
+  color:white;
 }
 <% end %>
       </section>

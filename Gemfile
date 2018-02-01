@@ -1,6 +1,6 @@
 # If you do not have OpenSSL installed, update
 # the following line to use "http://" instead
-source 'https://rubygems.org'
+source 'https://gems.ruby-china.org'
 
 gem "middleman", "~> 3.3.10"
 
@@ -26,4 +26,4 @@ gem 'middleman-autoprefixer'
 
 # Markdown support
 gem "middleman-syntax"
-gem 'pygments.rb', '~> 0.6.3'
+gem 'rouge'
