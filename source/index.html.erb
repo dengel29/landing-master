@@ -36,10 +36,15 @@ title: Building Your Personal Landing Page With HTML and CSS
           <li>
             To save time, just right-click on the following images and save them in your <code>images</code> folder
             <ul class="list-inline features">
+              <li><img src="images/open.png" alt=""></li>
               <li><img src="images/office.png" alt=""></li>
               <li><img src="images/meeting.png" alt=""></li>
               <li><img src="images/open.png" alt=""></li>
               <li><img src="images/event.png" alt=""></li>
+              <li><img src="images/relax.png" alt=""></li>
+              <li><img src="images/headphones.svg" alt=""></li>
+              <li><img src="images/game-controller.svg" alt=""></li>
+              <li><img src="images/connect.svg" alt=""></li>
             </ul>
           </li>
           <li>Then start with this HTML code in <code>playground.html</code></li>
@@ -73,7 +78,6 @@ title: Building Your Personal Landing Page With HTML and CSS
     <img src="images/event.png" alt="Events">
 
     <p>Drop us a line!</p>
-    <input type="text">
   </body>
 </html>
 <% end %>
@@ -169,7 +173,6 @@ a:hover {
   <p>Follow us!!</p>
 </div>
 <% end %>
-
       </section>
       <section class="readme-section">
         <h2 class="readme-header">5. Name your tags</h2>
@@ -209,13 +212,13 @@ a:hover {
   color: #AB2513;
 }
 
-/****************/
+****************/
 /* navbar */
 /****************/
 
 #navbar {
   background:white;
-  padding:10px;
+  padding:5px;
   text-align: center;
 }
 
@@ -248,7 +251,7 @@ a:hover {
 }
 
 #header h2 {
-  font-size: 40px;
+  font-size: 60px;
   max-width: 100vw;
   text-align: center;
   justify-content: center;
@@ -273,6 +276,10 @@ a:hover {
   background-color: white;
   text-align:center;
   width:200px;
+}
+
+.card p {
+  font-weight: bolder;
 }
 
 .card img {
@@ -323,86 +330,18 @@ a:hover {
 }
 
 .btn {
-  background:#D42C14;
+  background:#E8C559;
   color:white;
   font-weight: bolder;
   width:150px;
-  border:1px solid #AB2513;
+  border:1px solid #E8C559;
 }
 
 .btn:hover {
-  background:#AB2513;
+  background:#9E8C3E;
+  border: none;
   color:white;
 }
-
-
-
-/*#header{
-  text-align: center;
-  background-image: linear-gradient(-225deg, rgba(0,0,0,0.2) 0%, rgba(0,0,0,0.6) 50%), url("images/shanghai.jpg");
-  background-size: cover;
-  padding: 150px;
-  color: white;
-}
-
-#header p {
-  margin: 40px;
-}
-
-.card{
-  padding: 50px;
-  font-weight: lighter;
-  background-color: white;
-  text-align:center;
-  width:200px;
-}
-
-#footer{
-  padding: 50px;
-  background: rgb(30, 30, 30);
-  color: lightgrey;
-  text-align: center;
-  line-height: 2;
-}
-
-#footer ul {
-  padding-left:0;
-  list-style: none;
-}
-
-#footer li {
-  display: inline-block;
-  padding:0px 10px;
-}
-
-.input {
-  font-size: 18px;
-  height:50px;
-  padding:0px 15px;
-  background:white;
-  border:1px solid lightgray;
-  width:200px;
-  border-radius:3px;
-}
-
-.btn {
-  background:#D42C14;
-  color:white;
-  font-weight: bolder;
-  width:150px;
-  border:1px solid #AB2513;
-}
-
-.btn:hover {
-  background:#AB2513;
-  color:white;
-}
-
-a.btn {
-    padding: 15px;
-    text-decoration: none;
-}
-*/
 <% end %>
       </section>
       <section class="readme-section">
