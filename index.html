@@ -67,10 +67,15 @@
           <li>
             To save time, just right-click on the following images and save them in your <code>images</code> folder
             <ul class="list-inline features">
+              <li><img src="images/open.png" alt=""></li>
               <li><img src="images/office.png" alt=""></li>
               <li><img src="images/meeting.png" alt=""></li>
               <li><img src="images/open.png" alt=""></li>
               <li><img src="images/event.png" alt=""></li>
+              <li><img src="images/relax.png" alt=""></li>
+              <li><img src="images/headphones.svg" alt=""></li>
+              <li><img src="images/game-controller.svg" alt=""></li>
+              <li><img src="images/connect.svg" alt=""></li>
             </ul>
           </li>
           <li>Then start with this HTML code in <code>playground.html</code></li>
@@ -103,7 +108,6 @@
     <span class="nt">&lt;img</span> <span class="na">src=</span><span class="s">"images/event.png"</span> <span class="na">alt=</span><span class="s">"Events"</span><span class="nt">&gt;</span>
 
     <span class="nt">&lt;p&gt;</span>Drop us a line!<span class="nt">&lt;/p&gt;</span>
-    <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"text"</span><span class="nt">&gt;</span>
   <span class="nt">&lt;/body&gt;</span>
 <span class="nt">&lt;/html&gt;</span>
 </code></pre>
@@ -196,7 +200,6 @@
   <span class="nt">&lt;p&gt;</span>Follow us!!<span class="nt">&lt;/p&gt;</span>
 <span class="nt">&lt;/div&gt;</span>
 </code></pre>
-
       </section>
       <section class="readme-section">
         <h2 class="readme-header">5. Name your tags</h2>
@@ -235,13 +238,13 @@
   <span class="nl">color</span><span class="p">:</span> <span class="m">#AB2513</span><span class="p">;</span>
 <span class="p">}</span>
 
-<span class="c">/****************/</span>
+<span class="o">****************/</span>
 <span class="c">/* navbar */</span>
 <span class="c">/****************/</span>
 
 <span class="nf">#navbar</span> <span class="p">{</span>
   <span class="nl">background</span><span class="p">:</span><span class="no">white</span><span class="p">;</span>
-  <span class="nl">padding</span><span class="p">:</span><span class="m">10px</span><span class="p">;</span>
+  <span class="nl">padding</span><span class="p">:</span><span class="m">5px</span><span class="p">;</span>
   <span class="nl">text-align</span><span class="p">:</span> <span class="nb">center</span><span class="p">;</span>
 <span class="p">}</span>
 
@@ -274,7 +277,7 @@
 <span class="p">}</span>
 
 <span class="nf">#header</span> <span class="nt">h2</span> <span class="p">{</span>
-  <span class="nl">font-size</span><span class="p">:</span> <span class="m">40px</span><span class="p">;</span>
+  <span class="nl">font-size</span><span class="p">:</span> <span class="m">60px</span><span class="p">;</span>
   <span class="nl">max-width</span><span class="p">:</span> <span class="m">100vw</span><span class="p">;</span>
   <span class="nl">text-align</span><span class="p">:</span> <span class="nb">center</span><span class="p">;</span>
   <span class="nl">justify-content</span><span class="p">:</span> <span class="nb">center</span><span class="p">;</span>
@@ -299,6 +302,10 @@
   <span class="nl">background-color</span><span class="p">:</span> <span class="no">white</span><span class="p">;</span>
   <span class="nl">text-align</span><span class="p">:</span><span class="nb">center</span><span class="p">;</span>
   <span class="nl">width</span><span class="p">:</span><span class="m">200px</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="nc">.card</span> <span class="nt">p</span> <span class="p">{</span>
+  <span class="nl">font-weight</span><span class="p">:</span> <span class="nb">bolder</span><span class="p">;</span>
 <span class="p">}</span>
 
 <span class="nc">.card</span> <span class="nt">img</span> <span class="p">{</span>
@@ -349,86 +356,18 @@
 <span class="p">}</span>
 
 <span class="nc">.btn</span> <span class="p">{</span>
-  <span class="nl">background</span><span class="p">:</span><span class="m">#D42C14</span><span class="p">;</span>
+  <span class="nl">background</span><span class="p">:</span><span class="m">#E8C559</span><span class="p">;</span>
   <span class="nl">color</span><span class="p">:</span><span class="no">white</span><span class="p">;</span>
   <span class="nl">font-weight</span><span class="p">:</span> <span class="nb">bolder</span><span class="p">;</span>
   <span class="nl">width</span><span class="p">:</span><span class="m">150px</span><span class="p">;</span>
-  <span class="nl">border</span><span class="p">:</span><span class="m">1px</span> <span class="nb">solid</span> <span class="m">#AB2513</span><span class="p">;</span>
+  <span class="nl">border</span><span class="p">:</span><span class="m">1px</span> <span class="nb">solid</span> <span class="m">#E8C559</span><span class="p">;</span>
 <span class="p">}</span>
 
 <span class="nc">.btn</span><span class="nd">:hover</span> <span class="p">{</span>
-  <span class="nl">background</span><span class="p">:</span><span class="m">#AB2513</span><span class="p">;</span>
+  <span class="nl">background</span><span class="p">:</span><span class="m">#9E8C3E</span><span class="p">;</span>
+  <span class="nl">border</span><span class="p">:</span> <span class="nb">none</span><span class="p">;</span>
   <span class="nl">color</span><span class="p">:</span><span class="no">white</span><span class="p">;</span>
 <span class="p">}</span>
-
-
-
-<span class="c">/*#header{
-  text-align: center;
-  background-image: linear-gradient(-225deg, rgba(0,0,0,0.2) 0%, rgba(0,0,0,0.6) 50%), url("images/shanghai.jpg");
-  background-size: cover;
-  padding: 150px;
-  color: white;
-}
-
-#header p {
-  margin: 40px;
-}
-
-.card{
-  padding: 50px;
-  font-weight: lighter;
-  background-color: white;
-  text-align:center;
-  width:200px;
-}
-
-#footer{
-  padding: 50px;
-  background: rgb(30, 30, 30);
-  color: lightgrey;
-  text-align: center;
-  line-height: 2;
-}
-
-#footer ul {
-  padding-left:0;
-  list-style: none;
-}
-
-#footer li {
-  display: inline-block;
-  padding:0px 10px;
-}
-
-.input {
-  font-size: 18px;
-  height:50px;
-  padding:0px 15px;
-  background:white;
-  border:1px solid lightgray;
-  width:200px;
-  border-radius:3px;
-}
-
-.btn {
-  background:#D42C14;
-  color:white;
-  font-weight: bolder;
-  width:150px;
-  border:1px solid #AB2513;
-}
-
-.btn:hover {
-  background:#AB2513;
-  color:white;
-}
-
-a.btn {
-    padding: 15px;
-    text-decoration: none;
-}
-*/</span>
 </code></pre>
       </section>
       <section class="readme-section">
