@@ -1,5 +1,5 @@
 ---
-title: Le Wagon 2-hour landing workshop
+title: Building Your Personal Landing Page With HTML and CSS
 ---
 
 <%= partial "components/banner" %>
@@ -36,9 +36,10 @@ title: Le Wagon 2-hour landing workshop
           <li>
             To save time, just right-click on the following images and save them in your <code>images</code> folder
             <ul class="list-inline features">
-              <li><img src="images/projects.svg" alt=""></li>
-              <li><img src="images/game-controller.svg" alt=""></li>
-              <li><img src="images/headphones.svg" alt=""></li>
+              <li><img src="images/office.png" alt=""></li>
+              <li><img src="images/meeting.png" alt=""></li>
+              <li><img src="images/open.png" alt=""></li>
+              <li><img src="images/event.png" alt=""></li>
             </ul>
           </li>
           <li>Then start with this HTML code in <code>playground.html</code></li>
@@ -50,24 +51,29 @@ title: Le Wagon 2-hour landing workshop
   </head>
   <body>
 
-    <h1>Dan Engel</h1>
-    <h2>A Human</h2>
+    <h1>Walnut</h1>
+    <h2>Hustling begets more hustling</h2>
     <p>Making things for other humans.</p>
     <a href="">Say hi</a>
 
-    <h2>Projects</h2>
-    <p>Check out my projects</p>
-    <img src="" alt="Projects">
+    <h2>Seating</h2>
+    <p>Lots of great seats</p>
+    <img src="images/open.png" alt="Seating">
 
-    <h2>Games</h2>
-    <p>I love to game, see what I'm playing</p>
-    <img src="" alt="Games">
+    <h2>Meetings</h2>
+    <p>Delicious meeting rooms for your next devious plan</p>
+    <img src="images/meeting.png" alt="Meeting">
 
-    <h2>Music</h2>
-    <p>My favorite music</p>
-    <img src="" alt="Apps">
+    <h2>Offices</h2>
+    <p>Work in solitude</p>
+    <img src="images/office.png" alt="Offices">
 
-    <p>Follow me!</p>
+    <h2>Events</h2>
+    <p>Turn it up to 11</p>
+    <img src="images/event.png" alt="Events">
+
+    <p>Drop us a line!</p>
+    <input type="text">
   </body>
 </html>
 <% end %>
@@ -128,33 +134,39 @@ a:hover {
         <p>Wrap different sections in different <code>div</code></p>
 
 <% code("html") do %>
+
 <div>
-  <h1>Dan Engel</h1>
-  <h2>A Human</h2>
-  <p>Making things for other humans.</p>
-  <a href="">Say hi</a>
+  <h1>Walnut</h1>
+  <h2>Where Chengdu's hustlers hustle</h2>
+  <a href="">Get in touch</a>
 </div>
 
 <div>
-  <h2>Projects</h2>
-  <p>Games and other fun things I've made</p>
-  <img src="images/projects.svg" alt="Projects">
+  <h2>Seating</h2>
+  <p>Lots of great seats</p>
+  <img src="images/office.png" alt="Seating">
 </div>
 
 <div>
-  <h2>Games</h2>
-  <p>I love to game, see what I'm playing</p>
-  <img src="images/game-controller.svg" alt="Games">
+  <h2>Meetings</h2>
+  <p>Delicious meeting rooms for your next devious plan</p>
+  <img src="images/meeting.png" alt="Meeting">
 </div>
 
 <div>
-  <h2>Music</h2>
-  <p>My favorite music</p>
-  <img src="images/headphones.svg" alt="Music">
+  <h2>Offices</h2>
+  <p>Work in solitude</p>
+  <img src="images/office.png" alt="Offices">
 </div>
 
 <div>
-  <p>Follow me!</p>
+  <h2>Events</h2>
+  <p>Turn it up to 11</p>
+  <img src="images/event.png" alt="Events">
+</div>
+
+<div>
+  <p>Follow us!!</p>
 </div>
 <% end %>
 
@@ -167,26 +179,62 @@ a:hover {
           <li>Then add this nice CSS code</li>
         </ul>
 <% code("css") do %>
+/* style.css */
+
+/* general body */
+/****************/
+
+body{
+  background: #FFFFFF;
+  color: #2E2E2E;
+  font-size: 15px;
+  font-family: Helvetica;
+  margin: 0 auto;
+}
+h1{
+  color: #FFFFFF;
+  font-weight: bolder;
+  font-size: 50px;
+}
+h2 {
+  color: #FFFFF;
+  font-weight: bolder;
+  font-size: 20px;
+}
+a {
+  color: lightgrey;
+}
+a:hover {
+  text-decoration: none;
+  color: #AB2513;
+}
+
 /****************/
 /* navbar */
 /****************/
 
-.navbar {
+#navbar {
   background:white;
-  padding:5px;
+  padding:10px;
   text-align: center;
+}
+
+#navbar img {
+  max-height: 70px
 }
 
 /****************/
 /* header */
 /****************/
 
-#header {
+#header{
   text-align: center;
-  background-image: linear-gradient(-225deg, rgba(0,101,168,0.6) 0%, rgba(0,36,61,0.6) 50%), url("http://acceler8.ph/images/coworking.jpg?format=2500w");
+  background-image: linear-gradient(-225deg, rgba(0,0,0,0.2) 0%, rgba(0,0,0,0.6) 50%), url("images/walnut-banner.jpeg");
   background-size: cover;
   padding: 150px;
   color: white;
+  max-height: ;
+  height:50vh;
 }
 
 #header p {
@@ -198,6 +246,14 @@ a:hover {
   padding:15px;
   text-decoration: none;
 }
+
+#header h2 {
+  font-size: 40px;
+  max-width: 100vw;
+  text-align: center;
+  justify-content: center;
+}
+
 
 /****************/
 /* content */
@@ -211,7 +267,7 @@ a:hover {
   text-align: center;
 }
 
-.card {
+.card{
   padding: 50px;
   font-weight: lighter;
   background-color: white;
@@ -227,9 +283,9 @@ a:hover {
 /* footer */
 /****************/
 
-#footer {
+#footer{
   padding: 50px;
-  background: #1E1E1E;
+  background: rgb(30, 30, 30);
   color: lightgrey;
   text-align: center;
   line-height: 2;
@@ -267,17 +323,86 @@ a:hover {
 }
 
 .btn {
-  background:#F5941F;
+  background:#D42C14;
   color:white;
   font-weight: bolder;
   width:150px;
-  border:1px solid black;
+  border:1px solid #AB2513;
 }
 
 .btn:hover {
-  background: #F78000;
+  background:#AB2513;
   color:white;
 }
+
+
+
+/*#header{
+  text-align: center;
+  background-image: linear-gradient(-225deg, rgba(0,0,0,0.2) 0%, rgba(0,0,0,0.6) 50%), url("images/shanghai.jpg");
+  background-size: cover;
+  padding: 150px;
+  color: white;
+}
+
+#header p {
+  margin: 40px;
+}
+
+.card{
+  padding: 50px;
+  font-weight: lighter;
+  background-color: white;
+  text-align:center;
+  width:200px;
+}
+
+#footer{
+  padding: 50px;
+  background: rgb(30, 30, 30);
+  color: lightgrey;
+  text-align: center;
+  line-height: 2;
+}
+
+#footer ul {
+  padding-left:0;
+  list-style: none;
+}
+
+#footer li {
+  display: inline-block;
+  padding:0px 10px;
+}
+
+.input {
+  font-size: 18px;
+  height:50px;
+  padding:0px 15px;
+  background:white;
+  border:1px solid lightgray;
+  width:200px;
+  border-radius:3px;
+}
+
+.btn {
+  background:#D42C14;
+  color:white;
+  font-weight: bolder;
+  width:150px;
+  border:1px solid #AB2513;
+}
+
+.btn:hover {
+  background:#AB2513;
+  color:white;
+}
+
+a.btn {
+    padding: 15px;
+    text-decoration: none;
+}
+*/
 <% end %>
       </section>
       <section class="readme-section">
@@ -341,31 +466,41 @@ a:hover {
   </body>
 </html>
 <% end %>
+  </section>
+  <section class="readme-section">
+    <h2 class="readme-header">8. Bootstrap grid</h2>
+    <ul>
+      <li>Inject your 4 cards div in the following responsive grid</li>
+    </ul>
+  <% code("html") do %>
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-12 col-sm-6 col-md-3">
+          <!-- div class="card" -->
+        </div>
+        <div class="col-xs-12 col-sm-6 col-md-3">
+          <!-- div class="card" -->
+        </div>
+        <div class="col-xs-12 col-sm-6 col-md-3">
+          <!-- div class="card" -->
+        </div>
+        <div class="col-xs-12 col-sm-6 col-md-3">
+          <!-- div class="card" -->
+        </div>
+      </div>
+    </div>
+    <% end %>
       </section>
-      <section class="readme-section">
-        <h2 class="readme-header">8. Bootstrap grid</h2>
+    </div>
+  </div>
+  <section class ="readme-section">
+    <h2 class="readme-header">7. Have fun with HTML&CSS!</h2>
         <ul>
-          <li>Inject your 4 cards div in the following responsive grid</li>
+          <li>We recommend you continue back home and <a href="https://www.codecademy.com/learn/learn-html-css">complete this free 101 course</a></li>
+          <li>Want to learn much more, fast? <a href="https://www.lewagon.com/apply/chengdu">Applications start here</a></li>
+          <li>If you appreciate this workshop, <a href="http://www.meetup.com/Le-Wagon-Chengdu/">leave us a review on meetup!</a>♥</li>
+          <li>Any question: <a href="mailto:chengdu@lewagon.org">get in touch</a></li>
         </ul>
-<% code("html") do %>
-<div class="container">
-  <div class="row">
-    <div class="col-xs-12 col-sm-6 col-md-3">
-      <!-- div class="card" -->
-    </div>
-    <div class="col-xs-12 col-sm-6 col-md-3">
-      <!-- div class="card" -->
-    </div>
-    <div class="col-xs-12 col-sm-6 col-md-3">
-      <!-- div class="card" -->
-    </div>
-    <div class="col-xs-12 col-sm-6 col-md-3">
-      <!-- div class="card" -->
-    </div>
-  </div>
+  </section>
 </div>
-<% end %>
-      </section>
-    </div>
-  </div>
-</div>
+
